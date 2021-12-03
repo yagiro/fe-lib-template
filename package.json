@@ -1,0 +1,21 @@
+{
+ "name": "@yagiro/mypkg",
+ "version": "0.1.0",
+ "description": "mypkg",
+ "main": "dist/index.js",
+ "files": [
+   "dist"
+ ],
+ "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1",
+   "build": ".\\node_modules\\.bin\\babel src --out-dir dist",
+   "prepublishOnly": "npm run build"
+ },
+ "author": "yagiro",
+ "license": "ISC",
+ "devDependencies": {
+   "@babel/cli": "^7.15.4",
+   "@babel/core": "^7.15.5",
+   "@babel/preset-env": "^7.15.6"
+ }
+}
